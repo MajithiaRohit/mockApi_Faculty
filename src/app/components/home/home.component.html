@@ -1,0 +1,19 @@
+<div class="container-sm mt-5">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let fac of faculalty">
+      <div class="card mb-5 " style="width: 18rem;">
+        <a (click)="viewData(fac.facultyID)" class="text-decoration-none text-dark ">
+              <img src="{{fac.facultyImage}}" class="card-img-top " alt="...">
+              <div class="card-body me-3">
+                <h2 class="card-title">{{fac.facultyName}}</h2>
+                <h5>City: {{fac.facultycity}}</h5>
+                <div class="col d-flex justify-content-center">  
+                  <button class="btn btn-primary"(click)="viewData(fac.facultyID)">View</button>
+                </div>
+              </div>
+          </a>
+      </div>
+    </div>
+  </div>  
+</div>
+
