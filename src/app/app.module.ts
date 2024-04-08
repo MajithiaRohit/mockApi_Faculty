@@ -29,7 +29,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     SweetAlert2Module.forRoot(),
     FormsModule,
-    NgModule
+    // NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

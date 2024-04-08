@@ -6,9 +6,10 @@ import { AddFacultyComponent } from './components/add-faculty/add-faculty.compon
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
+  {path: 'AddFaculty', component: AddFacultyComponent},
   {path: 'facultyData/:id', component: FacultyDataComponent},
   {path: 'UpdateFaculty/:id',component: AddFacultyComponent},
-  {path: 'AddFaculty', component: AddFacultyComponent}
+  
 ];
 
 @NgModule({

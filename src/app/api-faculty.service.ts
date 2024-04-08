@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { from } from 'rxjs';
 
 
 @Injectable({
@@ -25,4 +26,14 @@ export class ApiFacultyService {
   {
     return this._http.delete(this.apiUrl+"/"+id);
   }
+  insertFaculty(form:any)
+  {
+    return this._http.post(this.apiUrl,form);
+  }
+
+  updateFaculty(id:any,form:any)
+  {
+    return this._http.put(this.apiUrl+"/"+id,form);
+  }
+
 }
